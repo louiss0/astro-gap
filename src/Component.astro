@@ -1,3 +1,24 @@
 ---
-// Write your component code in this file!
+type AllowedColors =
+	| 'red'
+	| 'green'
+	| 'blue'
+	| 'purple'
+	| 'black'
+	| 'indigo'
+	| 'orange'
+	| 'yellow'
+	| 'brown'
+	| 'white';
+
+export interface Props {
+	spaces: number;
+	color?: AllowedColors;
+}
+
+const { spaces, color = '' } = Astro.props;
 ---
+
+<div data-id="gap" data-spaces={spaces} data-color={color}>//gap</div>
+
+<script src="./main.ts"></script>
