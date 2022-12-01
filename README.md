@@ -23,8 +23,16 @@ The `<AstroGap/>` has two props  `spaces=` and `color=`. These props are used to
 
 ## Mental Map
 
-The way gap works it that the parent's display property is taken into account then if it's a flexbox or a grid then the gap will change it's width or height accordingly 
+The way gap works it that the parent's display property is taken into account then if it's a flexbox or a grid then the gap will change it's width or height accordingly. The table below represents how the `<AstroGap />` will change it's height or width in response to it's parent's properties.   
 
+| Parent Properties                      | Property Changed | 
+| -------------------------------------- | ---------------- |
+| display: inline                        | width            |
+| display: block                         | height           |
+| display: grid / grid-auto-flow: row    | height           |
+| display: grid / grid-auto-flow: column | width            |
+| display: flex / flex-direction: row    | width            |
+| display: flex / flex-direction: column | height           |
 
 
 

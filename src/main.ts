@@ -25,7 +25,7 @@
         gap.dataset.id as string
       );
 
-      throwErrorIfThereisNoNextElement(
+      throwErrorIfThereIsNoNextElement(
         nextElementSibling,
         gap.dataset.id as string
       );
@@ -138,12 +138,12 @@
       }
     }
 
-    function throwErrorIfThereisNoNextElement(
+    function throwErrorIfThereIsNoNextElement(
       nextElementSibling: Element | null,
       id: string
     ): asserts nextElementSibling is Element;
 
-    function throwErrorIfThereisNoNextElement(
+    function throwErrorIfThereIsNoNextElement(
       nextElementSibling: Element | null,
       id: string
     ) {

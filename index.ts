@@ -2,4 +2,4 @@
 
 import AstroGap from "./src/Component.astro"
 
-export { AstroGap }
+export default AstroGap  
