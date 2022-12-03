@@ -11,7 +11,8 @@
   ],
   "keywords": [
     "astro-component",
-    "astro-integration"
+    "astro-integration",
+    "ui"
   ],
   "scripts": {
     "test": "mocha --parallel --timeout 15000",
